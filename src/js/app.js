@@ -17,6 +17,7 @@
   var package$pebble = _.pebble || (_.pebble = {});
   package$pebble.card_puj7f4$ = card;
   main([]);
-  Kotlin.defineModule('app', _);
   return _;
 }(module.exports, require('kotlin'), require('ui')));
+
+//# sourceMappingURL=app.js.map
