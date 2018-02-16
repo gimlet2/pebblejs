@@ -1,40 +1,25 @@
-Pebble.js
+Pebble.kt
 =========
 
 [![Build Status](https://travis-ci.org/pebble/pebblejs.svg?branch=master)](https://travis-ci.org/pebble/pebblejs)
 
-Pebble.js lets you write beautiful Pebble applications completely in JavaScript.
+Pebble.kt lets you write beautiful Pebble applications completely in Kotlin with traspiling to Javascipt.
 
-Pebble.js applications run on your phone. They have access to all the resources of your phone (internet connectivity, GPS, almost unlimited memory, etc). Because they are written in JavaScript they are also perfect to make HTTP requests and connect your Pebble to the internet.
+Pebble.kt applications run on your phone. They have access to all the resources of your phone (internet connectivity, GPS, almost unlimited memory, etc). Because they are written in JavaScript they are also perfect to make HTTP requests and connect your Pebble to the internet.
 
-**Warning:** Pebble.js is still in beta, so breaking API changes are possible. Pebble.js is best suited for prototyping and applications that inherently require communication in response to user actions, such as accessing the internet. Please be aware that as a result of Bluetooth round-trips for all actions, Pebble.js apps will use more power and respond slower to user interaction than a similar native app.
-
-> ![JSConf 2014](http://2014.jsconf.us/img/logo.png)
->
-> Pebble.js was announced during JSConf 2014!
+**Warning:** Pebble.kt is still in pre-alpha, so breaking API changes are possible. Pebble.kt is best suited for prototyping and applications that inherently require communication in response to user actions, such as accessing the internet. Please be aware that as a result of Bluetooth round-trips for all actions, Pebble.kt apps will use more power and respond slower to user interaction than a similar native app.
 
 ## Getting Started
 
- * In CloudPebble
-
-   The easiest way to use Pebble.js is in [CloudPebble](https://cloudpebble.net). Select the 'Pebble.js' project type when creating a new project.
-
-   [Build a Pebble.js application now in CloudPebble >](https://cloudpebble.net)
-
  * With the Pebble SDK
 
-   This option allows you to customize Pebble.js. Follow the [Pebble SDK installation instructions](https://developer.pebble.com/sdk/install/) to install the SDK on your computer and [fork this project](http://github.com/pebble/pebblejs) on Github. 
+   This option allows you to customize Pebble.js. Follow the [Pebble SDK installation instructions](https://developer.pebble.com/sdk/install/) to install the SDK on your computer and [fork this project](http://github.com/gimlet2/pebblekt) on Github. 
    
-   The main entry point for your application is in the `src/js/app.js` file. For projects with multiple files, you may move `src/js/app.js` to `src/js/app/index.js` instead and create new files under `src/js/app`.
+   The main entry point for your application is in the `src/kotlin/app.kt` file. For projects with multiple files, you may create new files under `src/kotlin/`.
 
    [Install the Pebble SDK on your computer >](http://developer.pebble.com/sdk/install/)
 
-
-Pebble.js applications follow modern JavaScript best practices. To get started, you just need to call `require('ui')` to load the UI module and start building user interfaces.
-
-````js
-var UI = require('ui');
-````
+## Rest of documentation is from original PebbleJs project
 
 The basic block to build user interface is the [Card]. A Card is a type of [Window] that occupies the entire screen and allows you to display some text in a pre-structured way: a title at the top, a subtitle below it and a body area for larger paragraphs. Cards can be made scrollable to display large quantities of information. You can also add images next to the title, subtitle or in the body area.
 
